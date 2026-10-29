@@ -1,0 +1,141 @@
+{
+  "utc": "2026-10-29T16:04:45.098565+00:00",
+  "firmware": "b158aa7",
+  "nominal_bps": 1000000,
+  "data_bps": 5000000,
+  "payload_bytes": 64,
+  "BRS": true,
+  "status": "pass",
+  "identities": [
+    {
+      "channel": "CAN0",
+      "port": "/dev/ttyACM0",
+      "version": "b158aa7 github.com/normaldotcom/canable2-fw\r"
+    },
+    {
+      "channel": "CAN1",
+      "port": "/dev/ttyACM1",
+      "version": "b158aa7 github.com/normaldotcom/canable2-fw\r"
+    }
+  ],
+  "stages": [
+    {
+      "index": 1,
+      "sources": [
+        0
+      ],
+      "requested_fps_each": 2000,
+      "seconds": 10,
+      "flows": {
+        "0": {
+          "sent": 16603,
+          "received": 16603,
+          "duplicates": 0,
+          "payload_errors": 0,
+          "out_of_order": 0,
+          "usb_partial_writes": 0,
+          "missing": 0,
+          "received_fps_per_send_window": 1660.3,
+          "useful_payload_mbps_per_send_window": 0.8501
+        }
+      },
+      "malformed": 0,
+      "unexpected": 0,
+      "elapsed_with_drain_seconds": 10.0009,
+      "leftover_ascii_bytes": [
+        0,
+        0
+      ],
+      "pass_integrity": true,
+      "firmware_E": [
+        "CANable Error Register: 0",
+        "CANable Error Register: 0"
+      ]
+    },
+    {
+      "index": 2,
+      "sources": [
+        1
+      ],
+      "requested_fps_each": 2000,
+      "seconds": 10,
+      "flows": {
+        "1": {
+          "sent": 16615,
+          "received": 16615,
+          "duplicates": 0,
+          "payload_errors": 0,
+          "out_of_order": 0,
+          "usb_partial_writes": 0,
+          "missing": 0,
+          "received_fps_per_send_window": 1661.5,
+          "useful_payload_mbps_per_send_window": 0.8507
+        }
+      },
+      "malformed": 0,
+      "unexpected": 0,
+      "elapsed_with_drain_seconds": 10.0009,
+      "leftover_ascii_bytes": [
+        0,
+        0
+      ],
+      "pass_integrity": true,
+      "firmware_E": [
+        "CANable Error Register: 0",
+        "CANable Error Register: 0"
+      ]
+    },
+    {
+      "index": 3,
+      "sources": [
+        0,
+        1
+      ],
+      "requested_fps_each": 1000,
+      "seconds": 60,
+      "flows": {
+        "0": {
+          "sent": 54929,
+          "received": 54929,
+          "duplicates": 0,
+          "payload_errors": 0,
+          "out_of_order": 0,
+          "usb_partial_writes": 0,
+          "missing": 0,
+          "received_fps_per_send_window": 915.48,
+          "useful_payload_mbps_per_send_window": 0.4687
+        },
+        "1": {
+          "sent": 54929,
+          "received": 54929,
+          "duplicates": 0,
+          "payload_errors": 0,
+          "out_of_order": 0,
+          "usb_partial_writes": 0,
+          "missing": 0,
+          "received_fps_per_send_window": 915.48,
+          "useful_payload_mbps_per_send_window": 0.4687
+        }
+      },
+      "malformed": 0,
+      "unexpected": 0,
+      "elapsed_with_drain_seconds": 60.0002,
+      "leftover_ascii_bytes": [
+        0,
+        0
+      ],
+      "pass_integrity": true,
+      "firmware_E": [
+        "CANable Error Register: 0",
+        "CANable Error Register: 0"
+      ]
+    }
+  ],
+  "limits": "Programmed bit timing, not oscilloscope measurement; USB ASCII transport also limits throughput. Firmware E register is not a complete hardware error counter.",
+  "closed": [
+    "/dev/ttyACM0",
+    "/dev/ttyACM1"
+  ],
+  "utc_end": "2026-10-29T16:06:07.652962+00:00",
+  "test_conditions": "Physical wired peer, no internal loopback. Existing root battery process excluded temporarily from the selected test tty; access restored afterwards."
+}

@@ -1,0 +1,2007 @@
+{
+  "upstream": "https://github.com/normaldotcom/canable2-fw",
+  "commit": "b158aa7ab106bc018715cd4d5f02f544f9de1830",
+  "files": [
+    {
+      "path": ".cproject",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d7961656d68b0c93590e0c09b8d3c368285991c",
+      "size": 38304,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/3d7961656d68b0c93590e0c09b8d3c368285991c"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a007feab071f496a016f150e1acd8fae57669cce",
+      "size": 8,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a007feab071f496a016f150e1acd8fae57669cce"
+    },
+    {
+      "path": "Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c8801cadcc50dc0fb83ac5289e15b2b8b14e505",
+      "size": 1003873,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/3c8801cadcc50dc0fb83ac5289e15b2b8b14e505"
+    },
+    {
+      "path": "Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6eef18ff06e46eae2f77d211644b2435ded3bb64",
+      "size": 5595,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/6eef18ff06e46eae2f77d211644b2435ded3bb64"
+    },
+    {
+      "path": "Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbff611dac5acc97097ff5b2fc6737430ed2502d",
+      "size": 2534,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/fbff611dac5acc97097ff5b2fc6737430ed2502d"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/cmsis_armcc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d751fb3a175a35889ff901cf624f2c959aa663a",
+      "size": 28208,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/7d751fb3a175a35889ff901cf624f2c959aa663a"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/cmsis_armclang.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8031b03024469800f20c5f638bc5958853142c2",
+      "size": 56497,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/d8031b03024469800f20c5f638bc5958853142c2"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/cmsis_compiler.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79a2cac3639eac8abdc6f0b8f122cceaf8ce41be",
+      "size": 9014,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/79a2cac3639eac8abdc6f0b8f122cceaf8ce41be"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/cmsis_gcc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bd41a4952d87109d334cb1c56a77ab7115b0921",
+      "size": 62344,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/1bd41a4952d87109d334cb1c56a77ab7115b0921"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/cmsis_iccarm.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c90a2cdc39f07dc12f62c2fe493cecc04ed0f96",
+      "size": 28414,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/3c90a2cdc39f07dc12f62c2fe493cecc04ed0f96"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/cmsis_version.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae3f2e33d821052ff25314ee2749dfb317db4990",
+      "size": 1716,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ae3f2e33d821052ff25314ee2749dfb317db4990"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/core_armv8mbl.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec76ab218bb5d27415a4b1eb663256bede3a1073",
+      "size": 97995,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ec76ab218bb5d27415a4b1eb663256bede3a1073"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/core_armv8mml.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d0f106775eaf61e291ac4f7afeb62ddf4eb7646",
+      "size": 168914,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/2d0f106775eaf61e291ac4f7afeb62ddf4eb7646"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/core_cm0.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f82227c6b40f8f5a3577685270f29d8e275d2f7",
+      "size": 42208,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/6f82227c6b40f8f5a3577685270f29d8e275d2f7"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/core_cm0plus.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9377e8c78357648918fb3247b9aba24a1f01a7e",
+      "size": 50464,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/b9377e8c78357648918fb3247b9aba24a1f01a7e"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/core_cm1.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd1c4077d270cce8716e33f8e2a3c1c28711029a",
+      "size": 43456,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/fd1c4077d270cce8716e33f8e2a3c1c28711029a"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/core_cm23.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8202a8ddfcdd5f628cd9c0c45c8dd7cb778804bf",
+      "size": 104628,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/8202a8ddfcdd5f628cd9c0c45c8dd7cb778804bf"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/core_cm3.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0dfbd3d9d43fda35afeaa03d7315f2c075601e2",
+      "size": 111854,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/b0dfbd3d9d43fda35afeaa03d7315f2c075601e2"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/core_cm33.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02f82e29bd2e4be649273f1fd8d07ba9b4b28a95",
+      "size": 175600,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/02f82e29bd2e4be649273f1fd8d07ba9b4b28a95"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/core_cm4.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "308b86813ca7b8cd37610e51d13b735fc6578232",
+      "size": 123607,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/308b86813ca7b8cd37610e51d13b735fc6578232"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/core_cm7.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ada6c2a57ee815a8e09c742a6dbfbeb2dc8e8855",
+      "size": 148588,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ada6c2a57ee815a8e09c742a6dbfbeb2dc8e8855"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/core_sc000.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9086c642b7f0308c0fd2a4ad966389770499a87a",
+      "size": 47249,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/9086c642b7f0308c0fd2a4ad966389770499a87a"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/core_sc300.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "665822da8b193f128c52f90229964e65ff5e5276",
+      "size": 110523,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/665822da8b193f128c52f90229964e65ff5e5276"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/mpu_armv7.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d4b600ccd6086ce1d7ba12869f826f07961bd83",
+      "size": 11711,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/7d4b600ccd6086ce1d7ba12869f826f07961bd83"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/mpu_armv8.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99ee9f99cb828fb0de19a7a131488d5a7d9b3882",
+      "size": 10958,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/99ee9f99cb828fb0de19a7a131488d5a7d9b3882"
+    },
+    {
+      "path": "Drivers/CMSIS/Include/tz_context.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4c1474f9cdf32c16f30a2efdc6e0c45ca43e227",
+      "size": 2757,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/d4c1474f9cdf32c16f30a2efdc6e0c45ca43e227"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d699c771b73735e65322ba96056f0b5ccb81c223",
+      "size": 204840,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/d699c771b73735e65322ba96056f0b5ccb81c223"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32_assert_template.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d6f2a7720da9b1a2dc57bbe67e4b890fdfc7996",
+      "size": 2211,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/3d6f2a7720da9b1a2dc57bbe67e4b890fdfc7996"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf83ca01ced8e3111275f984534d6d7b7f04de17",
+      "size": 28664,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/bf83ca01ced8e3111275f984534d6d7b7f04de17"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6e3b93209c8e0a116547ed28fcd4196d9439e48",
+      "size": 143520,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/f6e3b93209c8e0a116547ed28fcd4196d9439e48"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f689888d480f5bf7465e6dea6e0acf04f0a0cf98",
+      "size": 101862,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/f689888d480f5bf7465e6dea6e0acf04f0a0cf98"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_comp.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23598cd192f0be77ea47bd4e04f5278aeb0be74a",
+      "size": 73303,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/23598cd192f0be77ea47bd4e04f5278aeb0be74a"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_conf_template.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1a0e2b3ff7cc3b8a502313d00188d1219e15200",
+      "size": 13338,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/b1a0e2b3ff7cc3b8a502313d00188d1219e15200"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cordic.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b515be8e7ea2bc0e9a4208d163744f225a653ee0",
+      "size": 26607,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/b515be8e7ea2bc0e9a4208d163744f225a653ee0"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d84d9c5475bb68b9dd05b0724aba938f2ab1ac7",
+      "size": 17992,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/8d84d9c5475bb68b9dd05b0724aba938f2ab1ac7"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_crc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9aa6e44ff6aef45496ae4f28af9b43f8a583d78",
+      "size": 14628,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/e9aa6e44ff6aef45496ae4f28af9b43f8a583d78"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_crc_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a300db7abe4148a96da04ac88e358160a8d11622",
+      "size": 4830,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a300db7abe4148a96da04ac88e358160a8d11622"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cryp.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a940d3c36a7fecfc8f160cfb38cfb0679d1eda41",
+      "size": 25699,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a940d3c36a7fecfc8f160cfb38cfb0679d1eda41"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cryp_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb7b465d03eda76379be1765a4e89f385008898d",
+      "size": 3282,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/fb7b465d03eda76379be1765a4e89f385008898d"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dac.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d41178d206d5d352a496624579513bce9b7847dd",
+      "size": 31506,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/d41178d206d5d352a496624579513bce9b7847dd"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dac_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d1951023b9aacf36abd58059f4c3861b5d2825f",
+      "size": 17925,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/7d1951023b9aacf36abd58059f4c3861b5d2825f"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5eca1dac943d5ea4aca80c2780466b2bb2de604",
+      "size": 6586,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a5eca1dac943d5ea4aca80c2780466b2bb2de604"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec21906bd6a0c3119d801d315bc01a192fa6ed23",
+      "size": 37677,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ec21906bd6a0c3119d801d315bc01a192fa6ed23"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac260516101a989754c58176f2d7e02ce28f0e7d",
+      "size": 12789,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ac260516101a989754c58176f2d7e02ce28f0e7d"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5f18c0cb725a941d62166e50d07370be0016e58",
+      "size": 12749,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/d5f18c0cb725a941d62166e50d07370be0016e58"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fdcan.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a61b80ef7dc80b0ad0dc72a4d0f7cf52a2cb2e7",
+      "size": 80197,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/8a61b80ef7dc80b0ad0dc72a4d0f7cf52a2cb2e7"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc832ffca8368b4ae8b15f895bec6e0100d0716a",
+      "size": 45862,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/dc832ffca8368b4ae8b15f895bec6e0100d0716a"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a3fff4595a75f7e7a03d311db6a40cf90468076",
+      "size": 2650,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/0a3fff4595a75f7e7a03d311db6a40cf90468076"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbfdc985b5559b0f2856fc506dc11b7aaffec106",
+      "size": 2145,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/cbfdc985b5559b0f2856fc506dc11b7aaffec106"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fmac.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff1623ecc3ef4847cb48da3d376c4483ab7a1754",
+      "size": 33889,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ff1623ecc3ef4847cb48da3d376c4483ab7a1754"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7afcf128937145c5e73c1df90ff4ee267ccce195",
+      "size": 12592,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/7afcf128937145c5e73c1df90ff4ee267ccce195"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f90dd1bed82289cf9a7ed31976bf4dc4bdd6ea64",
+      "size": 15585,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/f90dd1bed82289cf9a7ed31976bf4dc4bdd6ea64"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_hrtim.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9e1c82fb8b917d6231ccee82b24e5e8da15fe5e",
+      "size": 339717,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/e9e1c82fb8b917d6231ccee82b24e5e8da15fe5e"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43e53ef5fff7bd918c8393df60ef1772725235e5",
+      "size": 37775,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/43e53ef5fff7bd918c8393df60ef1772725235e5"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bff9666614345cc63cb57594ee852c6a10afe7f",
+      "size": 6242,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/7bff9666614345cc63cb57594ee852c6a10afe7f"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2s.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d151aa751ee86f66bfe3f84fe4bc4119d38d7419",
+      "size": 23449,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/d151aa751ee86f66bfe3f84fe4bc4119d38d7419"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_irda.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c36d025344626c488697bc175f538211ba2ba77c",
+      "size": 43505,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/c36d025344626c488697bc175f538211ba2ba77c"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_irda_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05c04316700b6b1717259482453e829ae4e7278b",
+      "size": 24163,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/05c04316700b6b1717259482453e829ae4e7278b"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_iwdg.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e43e9b9f52779b70e6773d9a2e0f655ddfcad18",
+      "size": 7569,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/8e43e9b9f52779b70e6773d9a2e0f655ddfcad18"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_lptim.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca2a92aa96e708b711438a089c6a0b1ba6f6501e",
+      "size": 38309,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ca2a92aa96e708b711438a089c6a0b1ba6f6501e"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_nand.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03cc44d5753411f4ac197f55da3e552c492d11b8",
+      "size": 14242,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/03cc44d5753411f4ac197f55da3e552c492d11b8"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_nor.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f3e7f564087acc72fed24ed4b3c0c075625694c",
+      "size": 11422,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/2f3e7f564087acc72fed24ed4b3c0c075625694c"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_opamp.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f94c17add8f640700142b39213eb0757d188ffe3",
+      "size": 32046,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/f94c17add8f640700142b39213eb0757d188ffe3"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_opamp_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e47602eead3bb10c59feb9df6ec90adf523f2cb1",
+      "size": 2744,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/e47602eead3bb10c59feb9df6ec90adf523f2cb1"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80b2ef0f195b070d55b7ecbf4896dda5040a6b52",
+      "size": 35858,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/80b2ef0f195b070d55b7ecbf4896dda5040a6b52"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "632dc7a95a60a7ed7ce5c0f8a0d21a759a0d9695",
+      "size": 2725,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/632dc7a95a60a7ed7ce5c0f8a0d21a759a0d9695"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7b0a64c4f6d271c700c3b30294832c1aedb3e33",
+      "size": 15707,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a7b0a64c4f6d271c700c3b30294832c1aedb3e33"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c635b3b19d2bbe3da641ae4922634d3c397611ae",
+      "size": 31700,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/c635b3b19d2bbe3da641ae4922634d3c397611ae"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_qspi.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67b990b44061b85758a16c2d3b21ae9d5db81a4a",
+      "size": 37887,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/67b990b44061b85758a16c2d3b21ae9d5db81a4a"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad2ab3468e0ca54410aa92055426bb1cc7e7d703",
+      "size": 169094,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ad2ab3468e0ca54410aa92055426bb1cc7e7d703"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65532cb6240e708a1eb550185ad98bcdcd1217f8",
+      "size": 72401,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/65532cb6240e708a1eb550185ad98bcdcd1217f8"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rng.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef01dfd49bf7e43c51743d4a8bdf8ead6e714724",
+      "size": 12903,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ef01dfd49bf7e43c51743d4a8bdf8ead6e714724"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4cf00d26a88e26cdee2736687da9c32e3963b3d",
+      "size": 45818,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/c4cf00d26a88e26cdee2736687da9c32e3963b3d"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d893d18f333083202dc8bc636bedc6aba6f17dc5",
+      "size": 61104,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/d893d18f333083202dc8bc636bedc6aba6f17dc5"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_sai.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "737c57a348d70aad3f70cdc0398978f2c7d9d619",
+      "size": 40158,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/737c57a348d70aad3f70cdc0398978f2c7d9d619"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_sai_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90f630accdbaacfc459cfdf6b55b01b26a8ef6fb",
+      "size": 3103,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/90f630accdbaacfc459cfdf6b55b01b26a8ef6fb"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_smartcard.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5594a7c7fce7449d10c12478a9cf488c5c300a9",
+      "size": 65672,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/e5594a7c7fce7449d10c12478a9cf488c5c300a9"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_smartcard_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adbe650e7e69d8069cf9d81ec776b3a2095ab5a0",
+      "size": 18955,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/adbe650e7e69d8069cf9d81ec776b3a2095ab5a0"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_smbus.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff9ec07fff5554e096fdeb7df1271562115656e9",
+      "size": 36132,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ff9ec07fff5554e096fdeb7df1271562115656e9"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d07f696624f320dcf7acd7a1efcf8c49a1396ee5",
+      "size": 38570,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/d07f696624f320dcf7acd7a1efcf8c49a1396ee5"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "429e9f9d8643f7f2bcc1f9a918b623cb0a2e344a",
+      "size": 2109,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/429e9f9d8643f7f2bcc1f9a918b623cb0a2e344a"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_sram.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39aa685ef6288c1241a1675a03595709d37229a6",
+      "size": 8454,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/39aa685ef6288c1241a1675a03595709d37229a6"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebcf2131848c1b7398a85aaabf3f4d38d4b5e034",
+      "size": 157269,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ebcf2131848c1b7398a85aaabf3f4d38d4b5e034"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86c63a6e69c4af27d281a077bdae4da02513fa0c",
+      "size": 110458,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/86c63a6e69c4af27d281a077bdae4da02513fa0c"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "196e334796a288687b30be2a808ac8513dfc0336",
+      "size": 85532,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/196e334796a288687b30be2a808ac8513dfc0336"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d4fd9dfbd7de1446a0ffb8685c0e5fc427ab62f",
+      "size": 35046,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/6d4fd9dfbd7de1446a0ffb8685c0e5fc427ab62f"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_usart.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec0e9187f90cd5bde6f0ac9a675a08660c7f6190",
+      "size": 52881,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ec0e9187f90cd5bde6f0ac9a675a08660c7f6190"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_usart_ex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf2d615d31354ee1f15d57d69b7621d86b2ec995",
+      "size": 12816,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/cf2d615d31354ee1f15d57d69b7621d86b2ec995"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_wwdg.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6f86af9ef57b8c29510b216c99a8064749bb0e2",
+      "size": 11330,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a6f86af9ef57b8c29510b216c99a8064749bb0e2"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "625c36008e206ceb2b4951d662b89b8cdf5b271c",
+      "size": 495585,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/625c36008e206ceb2b4951d662b89b8cdf5b271c"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f73715adc7e158b16bbb133cd559fa99fd2150f7",
+      "size": 76612,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/f73715adc7e158b16bbb133cd559fa99fd2150f7"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_comp.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb276e7c046f2cb9f86ee0e6bca27d4f951002c8",
+      "size": 42051,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/fb276e7c046f2cb9f86ee0e6bca27d4f951002c8"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_cordic.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3ff654c3b68540dd3822b6a3b63436f3e4ea586",
+      "size": 28731,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/e3ff654c3b68540dd3822b6a3b63436f3e4ea586"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_cortex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31212408d638b5edff6ce02d12cf5a9ec1295ce1",
+      "size": 24998,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/31212408d638b5edff6ce02d12cf5a9ec1295ce1"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_crc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7c64301cd76ff71618f2a0166d9e774105fc104",
+      "size": 16160,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a7c64301cd76ff71618f2a0166d9e774105fc104"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_crs.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "018b65eb54d13fd0ae6991440b912e374077482f",
+      "size": 25229,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/018b65eb54d13fd0ae6991440b912e374077482f"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dac.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f8d11d33e405e940eba5c7ccc957681f6b2057b",
+      "size": 135400,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/1f8d11d33e405e940eba5c7ccc957681f6b2057b"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "979b1b6eeb14072af3179e859d531ec94fda1279",
+      "size": 105174,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/979b1b6eeb14072af3179e859d531ec94fda1279"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d60c4dab6ff30ce3ce2e7991794ad52fcf8e0ef",
+      "size": 96373,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/8d60c4dab6ff30ce3ce2e7991794ad52fcf8e0ef"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "513bea8fff0f577ecb3d025af74ef252dc1336ea",
+      "size": 55909,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/513bea8fff0f577ecb3d025af74ef252dc1336ea"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_fmac.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27395d83b0e1618a921d4179b5ed5573328c466d",
+      "size": 34031,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/27395d83b0e1618a921d4179b5ed5573328c466d"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_fmc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c6621a9b0f1d92242c4a44a86b14d201032546c",
+      "size": 36352,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/3c6621a9b0f1d92242c4a44a86b14d201032546c"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a41249dcb54c752aecbf7a7fd917110ba698a067",
+      "size": 39080,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a41249dcb54c752aecbf7a7fd917110ba698a067"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_hrtim.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eefd0d6816f9e75157294b7f018ce030ab86078f",
+      "size": 740238,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/eefd0d6816f9e75157294b7f018ce030ab86078f"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_i2c.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52877f1cd802c5519a3e970fa72f28e206b3735f",
+      "size": 85402,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/52877f1cd802c5519a3e970fa72f28e206b3735f"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_iwdg.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e542c3c72778d3a3a88c193f07b3c6bdc9e606d9",
+      "size": 10867,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/e542c3c72778d3a3a88c193f07b3c6bdc9e606d9"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_lptim.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7cf5035702fd4a65811e2788d248ca0dd9240fd",
+      "size": 57741,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a7cf5035702fd4a65811e2788d248ca0dd9240fd"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_lpuart.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33670ca956eaf8631ab94c7d5542dbbf63bd2e46",
+      "size": 97852,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/33670ca956eaf8631ab94c7d5542dbbf63bd2e46"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_opamp.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86c7b427541b86ad6191a33be31b0273d388917e",
+      "size": 51609,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/86c7b427541b86ad6191a33be31b0273d388917e"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_pwr.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27a8dee49b243147d14b56407011eb7341b5a8a1",
+      "size": 53059,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/27a8dee49b243147d14b56407011eb7341b5a8a1"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rcc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e0fbbe17873a6436d6b9b8c5a6cc0a27a832fbe",
+      "size": 114877,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/6e0fbbe17873a6436d6b9b8c5a6cc0a27a832fbe"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rng.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a19fe45a588882e5f7f19f2a2d5ca88e0e71b1ba",
+      "size": 11073,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a19fe45a588882e5f7f19f2a2d5ca88e0e71b1ba"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rtc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24134af9c39be6d92f9d24367910038756e9d089",
+      "size": 202427,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/24134af9c39be6d92f9d24367910038756e9d089"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_spi.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04b16c5f84b78ba8cfd7783ae53e49a9a821dab8",
+      "size": 78603,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/04b16c5f84b78ba8cfd7783ae53e49a9a821dab8"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_system.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caf4a2e1379188178e0b534b8a2304222dafc361",
+      "size": 60761,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/caf4a2e1379188178e0b534b8a2304222dafc361"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d934d04cc6a25eec77e24a5882bed9ad064679be",
+      "size": 314405,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/d934d04cc6a25eec77e24a5882bed9ad064679be"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_ucpd.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4544f4b2f966b4cc9e41cab7819eefb94f2f3297",
+      "size": 63971,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/4544f4b2f966b4cc9e41cab7819eefb94f2f3297"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "174d70795594f459e76d1f57f2c8ed6bc168279f",
+      "size": 178669,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/174d70795594f459e76d1f57f2c8ed6bc168279f"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68cc91f27aa29aff662744fb643ed8264b089323",
+      "size": 8880,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/68cc91f27aa29aff662744fb643ed8264b089323"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_utils.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa643358dab72d02a54e59fb4135a8ae4eb94832",
+      "size": 11318,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/aa643358dab72d02a54e59fb4135a8ae4eb94832"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_wwdg.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5393f395f932e29984f6803b2aa9c29bde56275b",
+      "size": 11581,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/5393f395f932e29984f6803b2aa9c29bde56275b"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d39c169d6056416a88b51c544a452a4d7e66ec9b",
+      "size": 23843,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/d39c169d6056416a88b51c544a452a4d7e66ec9b"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8a0a18496462b9c2263859d82c058cb9e698272",
+      "size": 148723,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a8a0a18496462b9c2263859d82c058cb9e698272"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad5bc3aa40ef93096e0623ca8aa3aed04c10b31c",
+      "size": 94705,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ad5bc3aa40ef93096e0623ca8aa3aed04c10b31c"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_comp.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d6083109fa3ed9782ad809217cd030f1b4848d6",
+      "size": 35823,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/7d6083109fa3ed9782ad809217cd030f1b4848d6"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cordic.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c070e869de608d8f40d00e9d125613db2ac86cc",
+      "size": 46368,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/2c070e869de608d8f40d00e9d125613db2ac86cc"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "daca353a2e21af71eeb6c52a0cef0968390daa77",
+      "size": 21232,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/daca353a2e21af71eeb6c52a0cef0968390daa77"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_crc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cfff44d549fe4b990532e7f68d572073b724c92",
+      "size": 17630,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/8cfff44d549fe4b990532e7f68d572073b724c92"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_crc_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3303aaa456fd90b343428a37929a81233dc822a",
+      "size": 7706,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/e3303aaa456fd90b343428a37929a81233dc822a"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cryp.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b48a8a38a343f3c5ab0ef8093b1d7995bb976ff",
+      "size": 184739,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/3b48a8a38a343f3c5ab0ef8093b1d7995bb976ff"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cryp_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07f03ee1c92e455b5dfbc1e82b00636bee16fe0b",
+      "size": 12261,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/07f03ee1c92e455b5dfbc1e82b00636bee16fe0b"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3eb18f59024934b13aacd71f0fc1dadbe695134",
+      "size": 62504,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a3eb18f59024934b13aacd71f0fc1dadbe695134"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "438a0465b778529eb114f8121d6df6940d0b26c6",
+      "size": 39092,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/438a0465b778529eb114f8121d6df6940d0b26c6"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "696f6b89fa37198651a524df0212b6ba8468d04d",
+      "size": 36224,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/696f6b89fa37198651a524df0212b6ba8468d04d"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52990e66337f614ad2dd5ad7333dcfe70c49aef8",
+      "size": 10841,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/52990e66337f614ad2dd5ad7333dcfe70c49aef8"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04afa46ade8d775e9be709d32ce15fbef23c2081",
+      "size": 18342,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/04afa46ade8d775e9be709d32ce15fbef23c2081"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fa7a0318e10b7ef76ba32a8620f6f402f1dc060",
+      "size": 124028,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/1fa7a0318e10b7ef76ba32a8620f6f402f1dc060"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "403fab8385a3329df5bfe9d87c90d3ce63af9450",
+      "size": 24154,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/403fab8385a3329df5bfe9d87c90d3ce63af9450"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "480e31722caf59433dcac06c4d019139faa04024",
+      "size": 49967,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/480e31722caf59433dcac06c4d019139faa04024"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bda07de7d4b5a5320a430bdf49e96394cbf9275",
+      "size": 8353,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/6bda07de7d4b5a5320a430bdf49e96394cbf9275"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fmac.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e6a179c088adf9d07fb511a6114243b623a90a9",
+      "size": 90971,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/3e6a179c088adf9d07fb511a6114243b623a90a9"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e25651e2a58e2a8d26292e52f1da1def3e3420b2",
+      "size": 19233,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/e25651e2a58e2a8d26292e52f1da1def3e3420b2"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_hrtim.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e963c1ad86430b8c962c30c0c74f9791f2e37d4",
+      "size": 400790,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/8e963c1ad86430b8c962c30c0c74f9791f2e37d4"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba378b27283e9d0ca4e0a91a8e51421b3fa07173",
+      "size": 221211,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ba378b27283e9d0ca4e0a91a8e51421b3fa07173"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4ef53810aa9ec75e3378a3aa09492dc2f2f2304",
+      "size": 10989,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/c4ef53810aa9ec75e3378a3aa09492dc2f2f2304"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2s.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "501294d18530f79e509aef7e7aee9b119954fea9",
+      "size": 61655,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/501294d18530f79e509aef7e7aee9b119954fea9"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_irda.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87bb3bb766d1d4a816bd70af6007f1a64a9e24b7",
+      "size": 105211,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/87bb3bb766d1d4a816bd70af6007f1a64a9e24b7"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_iwdg.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f3734c3b152038c2b94c93a8f8913bf44ed3c78",
+      "size": 9651,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/0f3734c3b152038c2b94c93a8f8913bf44ed3c78"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_lptim.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa0cfe8808e789b825b0e49d323b96ab43a3cdd6",
+      "size": 68905,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/fa0cfe8808e789b825b0e49d323b96ab43a3cdd6"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_nand.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d7b62a955210068bb0d0279f997be8c0a3661c7",
+      "size": 73070,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/8d7b62a955210068bb0d0279f997be8c0a3661c7"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_nor.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0065eef2726cd1b8cee57d5d99d943701d29cc64",
+      "size": 40561,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/0065eef2726cd1b8cee57d5d99d943701d29cc64"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8016a0b7e220e2d6927c7d296138bafa1db6181",
+      "size": 42427,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/f8016a0b7e220e2d6927c7d296138bafa1db6181"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf7d7d51435ff9262451c168474a6c02324ceb46",
+      "size": 26305,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/bf7d7d51435ff9262451c168474a6c02324ceb46"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7eb0ff5aa7ee1003cfd10e2e0e26ab6d1ff4ff61",
+      "size": 49682,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/7eb0ff5aa7ee1003cfd10e2e0e26ab6d1ff4ff61"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87a0a9576ecccb2eeb5348e5226c8a4df25b90e2",
+      "size": 9702,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/87a0a9576ecccb2eeb5348e5226c8a4df25b90e2"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bec999a083fc3e45711de176be8ac792094e7302",
+      "size": 25281,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/bec999a083fc3e45711de176be8ac792094e7302"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a43c816183811792f6247ef5f95665bc968150a7",
+      "size": 39506,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a43c816183811792f6247ef5f95665bc968150a7"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_qspi.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ada09baf00154f0af50808225d2b4510f6aeea4b",
+      "size": 93886,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ada09baf00154f0af50808225d2b4510f6aeea4b"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73c2e8e9d05b5a2a59c1919975aef1fb64cee955",
+      "size": 51904,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/73c2e8e9d05b5a2a59c1919975aef1fb64cee955"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f0aace11f7b3e7f3148110d667e88280caa4210",
+      "size": 63743,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/6f0aace11f7b3e7f3148110d667e88280caa4210"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a923563b6355c0156ae51146c91e468995f60bcd",
+      "size": 26497,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a923563b6355c0156ae51146c91e468995f60bcd"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rtc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b8a09ff6d55fa6712dbf27f9121555002cf4bc1",
+      "size": 73362,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/1b8a09ff6d55fa6712dbf27f9121555002cf4bc1"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rtc_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04fe9cef864b628bb34ad0ca5ec762df45d54638",
+      "size": 64186,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/04fe9cef864b628bb34ad0ca5ec762df45d54638"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_sai.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbca33eeffb95e74a5810e509b8f456167015cc3",
+      "size": 91021,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/fbca33eeffb95e74a5810e509b8f456167015cc3"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_sai_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef8c8c6c5d41c61155fc2e4ef57f587ac2735e64",
+      "size": 4097,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ef8c8c6c5d41c61155fc2e4ef57f587ac2735e64"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_smartcard.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38c313978a2e49b060fd0dc291565469b0b24c2d",
+      "size": 124757,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/38c313978a2e49b060fd0dc291565469b0b24c2d"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_smartcard_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97b9ecdf9c1d87f5a110f27a59eb0b25d86c3c28",
+      "size": 16531,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/97b9ecdf9c1d87f5a110f27a59eb0b25d86c3c28"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_smbus.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49709a1064d7ce046d6c6240c7bc5003872ddf98",
+      "size": 97303,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/49709a1064d7ce046d6c6240c7bc5003872ddf98"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66d5dc631d10f840d9eaaa592ad1a72c3f3e9c4f",
+      "size": 140067,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/66d5dc631d10f840d9eaaa592ad1a72c3f3e9c4f"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "559d3e9a66271e05a6672b29c6c31c4b9717971a",
+      "size": 3319,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/559d3e9a66271e05a6672b29c6c31c4b9717971a"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_sram.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1f1d1a51efaedc1cb225640652755957aa0bf36",
+      "size": 34159,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/e1f1d1a51efaedc1cb225640652755957aa0bf36"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbeefbc34677f4dfa86a6b4cb56230a0a530baf6",
+      "size": 240008,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/fbeefbc34677f4dfa86a6b4cb56230a0a530baf6"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8872dd15125d51e60b0ae66258c3e2857cf0009",
+      "size": 122772,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/c8872dd15125d51e60b0ae66258c3e2857cf0009"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9da2d12424ac2fb9d4e64bd9eb1051233a797e79",
+      "size": 136039,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/9da2d12424ac2fb9d4e64bd9eb1051233a797e79"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "213935a0738bb1a7f0a655eecd068773944d73a3",
+      "size": 24072,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/213935a0738bb1a7f0a655eecd068773944d73a3"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_usart.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ef2ddd8835cdb29743efb63b0074928e4dfec0e",
+      "size": 127621,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/9ef2ddd8835cdb29743efb63b0074928e4dfec0e"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_usart_ex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2df59d8ebf2cd94e088774535f5fdc7e083b34bc",
+      "size": 16264,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/2df59d8ebf2cd94e088774535f5fdc7e083b34bc"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_wwdg.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c948346a855e7df6485e4b0a23fd3ca55efcb673",
+      "size": 15145,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/c948346a855e7df6485e4b0a23fd3ca55efcb673"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2e9237b17088f931b9831dfbce2f804b0f1f7cb",
+      "size": 70703,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/b2e9237b17088f931b9831dfbce2f804b0f1f7cb"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_comp.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13a4b33778f32609b01334a579aa2f7d86d45f5e",
+      "size": 20526,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/13a4b33778f32609b01334a579aa2f7d86d45f5e"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_cordic.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "567f50f3ef548a6f71073a05dbd5cac9bddfd0ae",
+      "size": 2785,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/567f50f3ef548a6f71073a05dbd5cac9bddfd0ae"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_crc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cc51176336393ff8b3c363d0c6cd1bfad094c64",
+      "size": 2723,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/2cc51176336393ff8b3c363d0c6cd1bfad094c64"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_crs.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af8246f558f8f7c98eed1aabd89871b2319cb6d1",
+      "size": 2306,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/af8246f558f8f7c98eed1aabd89871b2319cb6d1"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dac.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f24827d9846768249dbc980641b6b7d119ddc97c",
+      "size": 21343,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/f24827d9846768249dbc980641b6b7d119ddc97c"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3a85c21dc5ff5bebea9c4d585d5aae4f93e5eaf",
+      "size": 16368,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/c3a85c21dc5ff5bebea9c4d585d5aae4f93e5eaf"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6fa4363790979df854001d6e0dac9b7ba770a32",
+      "size": 11378,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/b6fa4363790979df854001d6e0dac9b7ba770a32"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_fmac.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ca405ee4bec76d6c663077726eadd1dbddad632",
+      "size": 4641,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/2ca405ee4bec76d6c663077726eadd1dbddad632"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_fmc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb27da943a91f2e46ef02681c64bd71ebf71b1a8",
+      "size": 29232,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/fb27da943a91f2e46ef02681c64bd71ebf71b1a8"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "912ed9389df6a22a3891784f4dff8675719d6d17",
+      "size": 10260,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/912ed9389df6a22a3891784f4dff8675719d6d17"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_hrtim.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72b42191632affbc11c734bdc326f9af4df45e7a",
+      "size": 2516,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/72b42191632affbc11c734bdc326f9af4df45e7a"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_i2c.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e607f3c4336abf2bfe9143bb2dd803cc5870807d",
+      "size": 8405,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/e607f3c4336abf2bfe9143bb2dd803cc5870807d"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_lptim.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a8139517f435fd5363e221cb734df1750493303",
+      "size": 9513,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/2a8139517f435fd5363e221cb734df1750493303"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_lpuart.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b0a415a582444fb2a8d686555fb4dc64e31abf3",
+      "size": 12104,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/0b0a415a582444fb2a8d686555fb4dc64e31abf3"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_opamp.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28db53ad22f67a11f71115551b743614f941a970",
+      "size": 10045,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/28db53ad22f67a11f71115551b743614f941a970"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_pwr.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6870bd1b9b45c7a45e4cbaca4af2ad69ee9ae12f",
+      "size": 2361,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/6870bd1b9b45c7a45e4cbaca4af2ad69ee9ae12f"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rcc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab5d1689b736efa04d8d6f6713d775c6c19985b4",
+      "size": 36323,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ab5d1689b736efa04d8d6f6713d775c6c19985b4"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rng.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9eda609314d2ff91b1c16cd698d768ce469d330",
+      "size": 4084,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/a9eda609314d2ff91b1c16cd698d768ce469d330"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rtc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebbb34e1df9e0def1ac14f51ec0ff39bc70e9e32",
+      "size": 32406,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ebbb34e1df9e0def1ac14f51ec0ff39bc70e9e32"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_spi.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b384548a797a527413f0f7dc4a09a4d981c012ad",
+      "size": 21924,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/b384548a797a527413f0f7dc4a09a4d981c012ad"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "024116526e6015aa65dac7974ed075331cd87f85",
+      "size": 57209,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/024116526e6015aa65dac7974ed075331cd87f85"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_ucpd.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3af7cfcf6618d252d5a6e951f5410c9c3aa4eccd",
+      "size": 5104,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/3af7cfcf6618d252d5a6e951f5410c9c3aa4eccd"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usart.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ab2492973376b8879854c60cb31d43ede4550b0",
+      "size": 18954,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/1ab2492973376b8879854c60cb31d43ede4550b0"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usb.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc5a3e0314b902e7c8dd1dfdde75d5c9e2b0d2ee",
+      "size": 25174,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/bc5a3e0314b902e7c8dd1dfdde75d5c9e2b0d2ee"
+    },
+    {
+      "path": "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebc986827078c8a48f1b307a8142be8895d0c9c8",
+      "size": 27572,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ebc986827078c8a48f1b307a8142be8895d0c9c8"
+    },
+    {
+      "path": "LICENSE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbc7ae78c7fb45b8d7c1a3dc5b829163aaa52416",
+      "size": 36603,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/bbc7ae78c7fb45b8d7c1a3dc5b829163aaa52416"
+    },
+    {
+      "path": "Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b8271d7a5a96420016e10e03de5628be102d8f8",
+      "size": 5709,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/9b8271d7a5a96420016e10e03de5628be102d8f8"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0eb091c38c41081e495358870fa2b3f9562ef067",
+      "size": 5179,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/0eb091c38c41081e495358870fa2b3f9562ef067"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc_if_template.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1800e9b42ada7b2df02bb2891e90641d6af9754",
+      "size": 1628,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/b1800e9b42ada7b2df02bb2891e90641d6af9754"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58fdb586d5b57609a56d7a4bd5d3931f51046085",
+      "size": 29879,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/58fdb586d5b57609a56d7a4bd5d3931f51046085"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc_if_template.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f8557b011b047a0c12ac0a04c3819195a8e755a",
+      "size": 5440,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/7f8557b011b047a0c12ac0a04c3819195a8e755a"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_conf_template.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6912a91e0b853429bac5f5f282237f168da35446",
+      "size": 3764,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/6912a91e0b853429bac5f5f282237f168da35446"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "030927b3ad57eb8de0ef53c5f1d33622e63666c5",
+      "size": 5178,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/030927b3ad57eb8de0ef53c5f1d33622e63666c5"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25a4758266359567c2c9a2138621c31b370efcbb",
+      "size": 2286,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/25a4758266359567c2c9a2138621c31b370efcbb"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d7502f34f9bb1a6e2f069fa81e1df856567ae93",
+      "size": 11741,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/8d7502f34f9bb1a6e2f069fa81e1df856567ae93"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_desc_template.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf669654607f60dd3bd3562ff3bb01a8b0a54879",
+      "size": 1796,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/cf669654607f60dd3bd3562ff3bb01a8b0a54879"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a6dd5f766a01f7ce433f7b257e6feedcb05882e",
+      "size": 2764,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/8a6dd5f766a01f7ce433f7b257e6feedcb05882e"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_conf_template.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4667d71b50aea6bb9da83165a2a28b87d8ebabfb",
+      "size": 5915,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/4667d71b50aea6bb9da83165a2a28b87d8ebabfb"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1a60ae2bef1ce6b3358f9c6a220da4f531256c2",
+      "size": 13327,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/b1a60ae2bef1ce6b3358f9c6a220da4f531256c2"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e57c1bcda3e6e31e9141921e986deea00b7c7b67",
+      "size": 21638,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/e57c1bcda3e6e31e9141921e986deea00b7c7b67"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_desc_template.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1917f2fdf239f8faaa3855083b231af97d074b4",
+      "size": 9730,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/b1917f2fdf239f8faaa3855083b231af97d074b4"
+    },
+    {
+      "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33519727b1f4ebc069bed12612b4492e820a23eb",
+      "size": 4822,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/33519727b1f4ebc069bed12612b4492e820a23eb"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c14cf7d5d493cb9bfe0d979d77c4d28756d9e28",
+      "size": 2787,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/4c14cf7d5d493cb9bfe0d979d77c4d28756d9e28"
+    },
+    {
+      "path": "STM32G431CBTx_FLASH.ld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7aaa9cf0fb2643d557507aae31df3421def134d1",
+      "size": 5922,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/7aaa9cf0fb2643d557507aae31df3421def134d1"
+    },
+    {
+      "path": "inc/can.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b3fc89be1b83d3f989b66781051513ba77cf76e",
+      "size": 1609,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/9b3fc89be1b83d3f989b66781051513ba77cf76e"
+    },
+    {
+      "path": "inc/error.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32bca99c44a310655d6a710f5a9c601d34594ec6",
+      "size": 504,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/32bca99c44a310655d6a710f5a9c601d34594ec6"
+    },
+    {
+      "path": "inc/interrupts.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "003c831fca313bda4702d1f02e0d43c143d9fc53",
+      "size": 139,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/003c831fca313bda4702d1f02e0d43c143d9fc53"
+    },
+    {
+      "path": "inc/led.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c13690e277034391c6138cee12bbd0501b934def",
+      "size": 502,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/c13690e277034391c6138cee12bbd0501b934def"
+    },
+    {
+      "path": "inc/printf.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7edaa2214a61dd5cb80e18573490259ab8e5acf4",
+      "size": 4866,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/7edaa2214a61dd5cb80e18573490259ab8e5acf4"
+    },
+    {
+      "path": "inc/slcan.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0060cc322432afa8259a3a831a060eb64828cfa",
+      "size": 463,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/d0060cc322432afa8259a3a831a060eb64828cfa"
+    },
+    {
+      "path": "inc/stm32g4xx_hal_conf.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a025a9543694fbc2acccf80cc4f3f5332539e54",
+      "size": 13483,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/6a025a9543694fbc2acccf80cc4f3f5332539e54"
+    },
+    {
+      "path": "inc/system.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "020c01ba60e34fba82d2f18e2882c132e2016c85",
+      "size": 190,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/020c01ba60e34fba82d2f18e2882c132e2016c85"
+    },
+    {
+      "path": "inc/usb_device.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eeff34a9c8b7e654681e88d49f0b14cfc0847050",
+      "size": 210,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/eeff34a9c8b7e654681e88d49f0b14cfc0847050"
+    },
+    {
+      "path": "inc/usbd_cdc_if.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4a3dde97d45a997c52b36f4ceca954219099e58",
+      "size": 979,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/e4a3dde97d45a997c52b36f4ceca954219099e58"
+    },
+    {
+      "path": "inc/usbd_conf.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1935ae6f46b3e71e3de9949ad5c7e70ef86c8035",
+      "size": 1931,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/1935ae6f46b3e71e3de9949ad5c7e70ef86c8035"
+    },
+    {
+      "path": "inc/usbd_desc.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5743877b6d5ddb0a551d7e22cdde8691eeac97c9",
+      "size": 374,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/5743877b6d5ddb0a551d7e22cdde8691eeac97c9"
+    },
+    {
+      "path": "src/.directory",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24899f069a67b4d697328c8064ecb966d5d92c80",
+      "size": 60,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/24899f069a67b4d697328c8064ecb966d5d92c80"
+    },
+    {
+      "path": "src/can.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "456c375c09ea2ebfb0943f6429158706f372f6de",
+      "size": 8606,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/456c375c09ea2ebfb0943f6429158706f372f6de"
+    },
+    {
+      "path": "src/error.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7dd10a61aac696167f293b83b5e5fb4dbfc243c",
+      "size": 1232,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/c7dd10a61aac696167f293b83b5e5fb4dbfc243c"
+    },
+    {
+      "path": "src/interrupts.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea3cc8ac42b803b56b6b192b8952213423eaeb28",
+      "size": 1025,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/ea3cc8ac42b803b56b6b192b8952213423eaeb28"
+    },
+    {
+      "path": "src/led.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f2e644379d754f4aa94f153d593eb588a29eee1",
+      "size": 3493,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/7f2e644379d754f4aa94f153d593eb588a29eee1"
+    },
+    {
+      "path": "src/main.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b59edcb9636fbb5e4472e2bf0502c7480f666d66",
+      "size": 1144,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/b59edcb9636fbb5e4472e2bf0502c7480f666d66"
+    },
+    {
+      "path": "src/printf.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84fe9fa91f4f9a9f140a6c325fcdf8e4df9dc6ac",
+      "size": 27134,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/84fe9fa91f4f9a9f140a6c325fcdf8e4df9dc6ac"
+    },
+    {
+      "path": "src/slcan.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cdf4c09c8bef6f8964c4ea6ee2c866f653f9863",
+      "size": 9651,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/4cdf4c09c8bef6f8964c4ea6ee2c866f653f9863"
+    },
+    {
+      "path": "src/startup_stm32g431xx.s",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd149826300e64bb400e352ea3c2ee28ded112a3",
+      "size": 13196,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/dd149826300e64bb400e352ea3c2ee28ded112a3"
+    },
+    {
+      "path": "src/system.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d07d6364c58898df3f8ca0b925b0d2430567808d",
+      "size": 4420,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/d07d6364c58898df3f8ca0b925b0d2430567808d"
+    },
+    {
+      "path": "src/system_stm32g4xx.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "daa1146c2e5c9fc6fba87ec40edc8ac8ccc0654f",
+      "size": 9987,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/daa1146c2e5c9fc6fba87ec40edc8ac8ccc0654f"
+    },
+    {
+      "path": "src/usb_device.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bf405248d42add05e09117a045b09a4d8a49a42",
+      "size": 1045,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/7bf405248d42add05e09117a045b09a4d8a49a42"
+    },
+    {
+      "path": "src/usbd_cdc_if.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d537caf7924b44242626cc7b483bcbf63896e1a",
+      "size": 7581,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/9d537caf7924b44242626cc7b483bcbf63896e1a"
+    },
+    {
+      "path": "src/usbd_conf.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e9a4b009906dde7c21f6e7e5a3b21d66bd93e0c",
+      "size": 22767,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/5e9a4b009906dde7c21f6e7e5a3b21d66bd93e0c"
+    },
+    {
+      "path": "src/usbd_desc.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ab3ddf36f654ceee6e5129a952f85368a23ecfa",
+      "size": 8094,
+      "url": "https://api.github.com/repos/normaldotcom/canable2-fw/git/blobs/3ab3ddf36f654ceee6e5129a952f85368a23ecfa"
+    }
+  ],
+  "note": "Unmodified source subset required for this target; unrelated CMSIS DSP examples and prebuilt math libraries omitted."
+}

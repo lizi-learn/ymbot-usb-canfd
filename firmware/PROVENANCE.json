@@ -1,0 +1,35 @@
+{
+  "upstream": "https://github.com/normaldotcom/canable2-fw",
+  "commit": "b158aa7ab106bc018715cd4d5f02f544f9de1830",
+  "retrieved_on": "2026-10-29",
+  "firmware": "Original CANable 2.0 SLCAN with nonstandard CAN FD commands",
+  "target": "STM32G431CB, original CANable 2.0 hardware design",
+  "license": "Upstream LICENSE.md: application GPL-3.0; included third-party code retains its own notices",
+  "source_modified": false,
+  "source_files_git_blob_verified": 250,
+  "toolchain": "Ubuntu gcc-arm-none-eabi 15:10.3-2021.07-4 / GCC 10.3.1 20210621",
+  "build_command": [
+    "make",
+    "-j4",
+    "GIT_VERSION=b158aa7",
+    "GIT_REMOTE=github.com/normaldotcom/canable2-fw"
+  ],
+  "flash_address": "0x08000000",
+  "bin_bytes": 26468,
+  "initial_stack": "0x20008000",
+  "reset_vector": "0x80030c1",
+  "bin_sha256": "a24290eea6050cf6245ade91353e2f47732f9e570baf21b2a05f0f2a2c8c08f8",
+  "checks": {
+    "source_hashes": "pass",
+    "build": "pass",
+    "elf_arm_target": "pass",
+    "flash_and_reset_vectors": "pass",
+    "hex_record_checksums": "pass",
+    "hex_matches_bin": "pass",
+    "physical_flash_test": "pass: three independent channels, exact readback; all boot/version replies passed",
+    "physical_can_fd_5m_test": "pass: channels 0/1 wired; channel 2 not connected"
+  },
+  "host_interface_after_flash": "USB CDC serial / SLCAN; not native gs_usb canX",
+  "candidate_selection": "Original author SLCAN chosen to match canonical GPIO initialization. Third-party native FD candidates require additional board-specific review.",
+  "startup_side_effect": "Upstream may set BOR level 4 (~2.8V) at startup. Option bytes before/after were not measured."
+}

@@ -1,0 +1,32 @@
+{
+  "firmware": "b158aa7",
+  "channels": [
+    {
+      "channel": "CAN0",
+      "flash_readback": "pass",
+      "runtime_version": "pass",
+      "physical_peer_test": "pass 1M classic, FD 2M/5M"
+    },
+    {
+      "channel": "CAN1",
+      "flash_readback": "pass",
+      "runtime_version": "pass",
+      "physical_peer_test": "pass 1M classic, FD 2M/5M"
+    },
+    {
+      "channel": "CAN2",
+      "flash_readback": "pass",
+      "runtime_version": "pass",
+      "physical_peer_test": "not_connected_not_run"
+    }
+  ],
+  "not_measured": [
+    "Full bus saturation",
+    "Hardware bitrate upper limit",
+    "Scope bit timing",
+    "Hours/days endurance",
+    "Full controller TEC/REC counters"
+  ],
+  "continuous_frames": 143076,
+  "smoke_frames": 164
+}

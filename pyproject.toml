@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ymbot-usb-canfd"
+version = "0.1.0"
+description = "CANable 2.0 firmware, identity-checked flashing and physical peer tests"
+requires-python = ">=3.10"
+dependencies = ["pyserial>=3.5,<4"]
+license = {text = "GPL-3.0-only; vendor files retain upstream notices"}
+
+[project.scripts]
+ymbot-canfd = "ymbot_usb_canfd.cli:main"
+
+[tool.setuptools]
+packages = ["ymbot_usb_canfd"]

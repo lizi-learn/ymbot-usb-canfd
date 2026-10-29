@@ -1,0 +1,66 @@
+{
+  "started_utc": "2026-10-29T16:48:35.843889+00:00",
+  "nominal_bps": 1000000,
+  "data_bps": 5000000,
+  "mode": "fd",
+  "BRS": true,
+  "payload_bytes": 64,
+  "requested_fps_each": 500,
+  "duration_seconds": 5,
+  "identities": [
+    {
+      "vendor": "16d0",
+      "product_id": "117e",
+      "product": "CANable2 b158aa7 github.com/normaldotcom/canable2-fw",
+      "ports": [
+        "/dev/ttyACM0"
+      ],
+      "kind": "slcan_fd",
+      "version_reply": "b158aa7 github.com/normaldotcom/canable2-fw\r"
+    },
+    {
+      "vendor": "16d0",
+      "product_id": "117e",
+      "product": "CANable2 b158aa7 github.com/normaldotcom/canable2-fw",
+      "ports": [
+        "/dev/ttyACM1"
+      ],
+      "kind": "slcan_fd",
+      "version_reply": "b158aa7 github.com/normaldotcom/canable2-fw\r"
+    }
+  ],
+  "status": "pass",
+  "flows": {
+    "0": {
+      "sent": 2283,
+      "received": 2283,
+      "duplicate": 0,
+      "out_of_order": 0,
+      "payload_or_format_errors": 0,
+      "missing": 0,
+      "actual_fps": 456.6,
+      "useful_payload_mbps": 0.2338
+    },
+    "1": {
+      "sent": 2282,
+      "received": 2282,
+      "duplicate": 0,
+      "out_of_order": 0,
+      "payload_or_format_errors": 0,
+      "missing": 0,
+      "actual_fps": 456.4,
+      "useful_payload_mbps": 0.2337
+    }
+  },
+  "elapsed_with_drain_seconds": 5.0003,
+  "leftover_ascii_bytes": [
+    0,
+    0
+  ],
+  "firmware_error_registers": [
+    "CANable Error Register: 0",
+    "CANable Error Register: 0"
+  ],
+  "ended_utc": "2026-10-29T16:48:42.724525+00:00",
+  "conditions": "Published CLI code, wired channels 0/1, no temporary access filter; other readers checked before open and during the test. Channel 2 was not connected."
+}

@@ -1,0 +1,5 @@
+* text=auto
+firmware/upstream/** -text
+firmware/bin/*.bin binary
+firmware/bin/*.hex -text
+docs/*.pdf binary
