@@ -11,3 +11,11 @@ site/.wrangler/
 
 # Wrangler creates its local deployment cache at the repository root.
 .wrangler/
+# Wiki framework dependencies and generated content
+node_modules/
+site/.vitepress/cache/
+site/generated/
+site/public/data/
+site/public/downloads/
+site/public/build-info.json
+site/public/catalog.json

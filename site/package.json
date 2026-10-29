@@ -1,0 +1,24 @@
+{
+  "name": "ymbot-hardware-wiki",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev . --host 127.0.0.1",
+    "build": "node scripts/prepare.mjs && vitepress build . && node scripts/manifest.mjs && python3 check.py",
+    "preview": "vitepress preview . --host 127.0.0.1",
+    "predev": "node scripts/prepare.mjs",
+    "test": "node scripts/prepare.mjs && node --test backend/api.test.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "gray-matter": "4.0.3",
+    "vitepress": "1.6.4",
+    "vue": "3.5.44"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "hono": "4.13.14"
+  }
+}

@@ -1,39 +1,66 @@
-# YMBOT 硬件验证站点
+# YMBOT 硬件 Wiki
 
-生产地址：<https://ymbot-hardware-test.pages.dev/>。静态 Cloudflare Pages 站点，项目名 `ymbot-hardware-test`，生产分支 `main`，上传目录 `site/dist`。
+地址：<https://ymbot-hardware-test.pages.dev/>。使用 VitePress 1.6.4 / Vue 3 前端与 Hono 4 内容接口，部署到 Cloudflare Pages 项目 `ymbot-hardware-test`。左侧按主题列文章，点开进入正文；全文搜索、文章目录、代码复制和移动端菜单使用文档框架提供的功能。
 
-- 自研 USB CAN 板：本仓库 `evidence/` 的 2026-10-30 实测。CAN0/CAN1 FD 5M 有限台架通过；CAN2 未接线。
-- 5IO 板：`site/data/5io-snapshot.json` 引用另一个仓库的固定提交与原始证据。FD 5M 30 分钟严格验收失败，完整保留；12,386,944 帧总数包含 60,000 帧 / 30 秒基线。
-- 原 5IO 教学 Wiki 保留：<https://ymbot-5io-wiki.pages.dev/>。两块板的软件栈、证据与结论分开维护。
+## 本地开发
 
-## 构建和检查
-
-只用 Python 标准库生成 HTML。脚本验证 USB 帧数、完整性、CAN2 状态及 5IO 分阶段合计；结果文件不匹配时构建失败。
+需要 Node.js 20+、npm 和 Python 3；本次使用 Node.js 22。
 
 ```sh
-python3 site/build.py
-python3 site/check.py
-node --check site/assets/app.js
-python3 -m http.server 8000 --directory site/dist
+cd site
+npm ci
+npm run dev
+npm test
+npm run build
 ```
 
-网站不加载设备控制接口、不发 CAN 帧。硬件 CLI 与网站构建独立运行。下载只复制明确列出的公开 JSON 和已公开 PDF，不递归复制私有工作目录。
-
-## 更新记录
-
-新增测试时保留原始证据、日期、板卡身份、软件版本、接线 / 负载 / 时长及未测范围。失败阶段不能被短测通过覆盖。修改页面引用及生成逻辑后重新构建、检查和浏览器核验。
-
-5IO 记录来自另一个项目；更新其快照时核对固定提交、原始 JSON SHA-256 与统计口径。不要把本板的通过状态传播到另一块板。
-
-## 发布
-
-使用现有 Cloudflare 账户的 Pages Write 令牌，在本机环境配置 `CLOUDFLARE_API_TOKEN` 和 `CLOUDFLARE_ACCOUNT_ID`，不要写进仓库或构建产物。Pages 项目使用 Direct Upload；首次由维护者在目标账户创建同名项目。
+`npm run build` 生成 `site/dist`，包含预渲染正文和 Hono Worker。完整本地运行（包括 API）使用：
 
 ```sh
-python3 site/build.py
-python3 site/check.py
-npx --yes wrangler@4.152.0 pages deploy site/dist \
+npx --yes wrangler@4.152.0 pages dev dist --port 8788
+```
+
+`npm run preview` 可查看正文静态文件；完整接口验证使用 Wrangler。HTML、公开 JSON、PDF 和 Worker 构建时接受链接、内容范围、哈希和脚本策略检查。
+
+## 文章与导航
+
+一篇 `content/**/*.md` 对应一篇文章。复制 `templates/record.md` 后填写元数据和正文；左侧目录、归档、搜索和后端接口自动从已发布文章生成。
+
+- `category`：左侧分类；新分类也会自动出现。
+- `navTitle`：侧边栏短标题。
+- `date`：实际测试 / 整理日期；用引号包裹的 YYYY-MM-DD。
+- `board`：本篇对应板卡。
+- `draft: true`：不进入生产正文、目录或接口。
+
+维护说明也可在站点的“使用与维护 → 文章编写与维护”阅读。正文使用 GitHub Markdown 管理，当前版本没有网页登录编辑器。
+
+## 内容接口
+
+`backend/index.mjs` 使用 Hono，提供只读 HTTP 接口；文章数据由构建阶段从同一批公开 Markdown 生成。
+
+- `GET /api/health`
+- `GET /api/articles?category=分类&board=板卡&q=关键词&limit=20&offset=0`
+- `GET /api/articles/<slug>`
+- `GET /api/categories`
+- `GET /api/search?q=关键词`
+
+只路由 `/api/*` 到 Worker，正文和附件继续由 Pages 静态资源服务。接口不调用设备控制、不接受内容写入；归档页面从接口读取目录，接口不可用时仍可读预渲染记录。
+
+## 验证结论的归属
+
+自研 USB CAN 板与 5IO 板分别归档。USB CAN0/CAN1 FD 5M 有限台架通过，CAN2 未接线；5IO 的 30 分钟严格验收失败保留。12,386,944 帧总数包含 60,000 帧 / 30 秒基线。
+
+原 [5IO 系统优化 Wiki](https://ymbot-5io-wiki.pages.dev/) 保留。本次前后端重构没有运行新的硬件测试。
+
+## 发布和回退
+
+使用现有 Cloudflare 账户的 Pages Write 令牌，在本机环境配置 `CLOUDFLARE_API_TOKEN` 和 `CLOUDFLARE_ACCOUNT_ID`。不要把令牌写入源码、输出或日志。
+
+```sh
+npm ci
+npm run build
+npx --yes wrangler@4.152.0 pages deploy dist \
   --project-name ymbot-hardware-test --branch main
 ```
 
-发布后核对 `/build-info.json` 的源码提交，以及首页、两个板卡详情、测试口径、原始 JSON 与 PDF 的状态和内容哈希。站点暂不依赖 GitHub 自动部署，GitHub 提交本身不会改变设备状态。
+`wrangler.jsonc` 固定 Pages 输出和 Worker 兼容日期。旧的 `/usb-canfd/`、`/5io/`、`/method/` 地址重定向到新文章。发布后检查 `/build-info.json` 的源码提交、正文、搜索、API、JSON 与 PDF。需要回退时从 Cloudflare Pages 历史生产部署选择上一版，或重新构建对应 Git 提交。

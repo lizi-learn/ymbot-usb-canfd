@@ -1,0 +1,56 @@
+---
+title: '5IO：更换 RS485 芯片后的速率复测'
+navTitle: '5IO · RS485 换芯片复测'
+category: 'RS485 验证'
+board: '5IO / UART4、UART7'
+date: '2026-10-27'
+order: '10'
+result: '持续测试最高已测通过 1M'
+description: '短测到 4M，持续测试 1M 通过；保留 1.5M 至 4M 的失败与 UART overrun 记录。'
+---
+# 5IO：更换 RS485 芯片后的速率复测
+
+本文保留此前 5IO 板的实测与排查记录，命令对应 [5IO 系统优化仓库](https://github.com/lizi-learn/ymbot-5io-system-optimization)。本次 Wiki 重构没有对设备执行新的测试。
+
+实测：2026-10-27T11:00:34.863336+08:00 至 2026-10-27T11:14:49.115000+08:00。
+
+本次持续测试通过的最高已测档位：1M baud。短测到4M全部通过，但短测通过不等于持续可靠。默认仍为115200；1M至1.5M之间未细扫。
+
+| 波特率 | 2026-10-25 | 本次持续测试 | UART overrun A / B |
+| --- | --- | --- | --- |
+| 1M | 无同标准持续记录 | 20MiB + 1000次换向通过 | 0 / 0 |
+| 1.5M | 持续通过 | 第6轮，等长但64个位置不一致 | 1 / 0 |
+| 2M | 持续失败：少4字节 | 第2轮，净少6字节 | 1 / 0 |
+| 2.5M | 持续失败：少18字节 | 第6轮，等长但64个位置不一致 | 1 / 0 |
+| 3M | 持续失败：少27字节 | 第2轮，净少1字节 | 0 / 1 |
+| 3.5M | 持续失败：少2字节 | 第1轮，等长但66个位置不一致 | 0 / 2 |
+| 4M | 短测失败；其他配置试验亦失败 | 第2轮，净少3字节 | 0 / 2 |
+
+上次4M持续试验含DMA/分核配置，与本次默认配置不作严格同条件数值比较；两天的负载、焊接和线束条件未完全受控，不将结果差异直接归因于单一芯片。
+
+## 方法与范围
+
+两路 UART4/ttyS4 与 UART7/ttyS7 物理对传，8N1，半双工交替，使用与2026-10-25完全相同的测速脚本。短测每向32KiB+50次换向；持续测试每向每轮1MiB、10轮及1000次换向，遇数据不符时该档立即停止。随机/固定混合载荷逐字节和SHA256核对，错误计数增量也必须为0。
+
+新芯片型号：型号待用户确认，未独立拍摄丝印；更换路数：更换一路还是两路待用户确认。实物丝印、线长、端接电阻和波形未独立检查。不能据本次结果直接推断芯片最高额定速率。
+
+错误现象为数据不符并伴UART接收溢出；尚未隔离出唯一根因。本次不修改DMA、中断亲和性或启动配置，保留前后可比条件。
+
+结束后两路原termios、115200及配置哈希均恢复/保持，115200双向复测通过。故意波特率不匹配的负控正确失败，其累计错误与正式测试分开。
+
+[在线Wiki](https://ymbot-5io-wiki.pages.dev/rs485) · [源码](https://github.com/lizi-learn/ymbot-5io-system-optimization)
+
+## 复现测速
+
+仅用于本文匹配的 RK3588 / LBM5-DIBAN-V01A、Linux6.1.172。先停止串口业务并按[接口说明](https://github.com/lizi-learn/ymbot-5io-system-optimization/blob/28562569d887253fdb72693d9c7b57fe6ca14164/docs/BOARD_KIT.md)对插两个独立通道，再在目标板仓库根目录执行。脚本临时切换波特率并发出实际测试数据，结束恢复原termios；不会更改开机配置。不是健康检查入口。
+
+```sh
+# 短测扫描到4M，每向32KiB、50次换向
+sudo python3 tools/lbm5-rs485-rate-test --phase sweep --output /var/lib/rk3588-board-kit/rs485-rate/new-sweep.json
+# 持续验证指定档位：每向1MiB x10轮，1000次换向
+sudo python3 tools/lbm5-rs485-rate-test --phase stress --rates 1000000 --rounds 10 --output /var/lib/rk3588-board-kit/rs485-rate/new-stress-1m.json
+```
+
+每次选择新的输出文件名留档。换速前确认对端也处于测试状态，不能在业务线上直接测速；运行前用 `fuser /dev/ttyS4 /dev/ttyS7` 核对占用。需要 Python3、pyserial（本次3.5）与root读取UART计数/内部回环状态。源码哈希与2026-10-25和本次实机执行版本一致。
+
+[脱敏数据](https://github.com/lizi-learn/ymbot-5io-system-optimization/blob/28562569d887253fdb72693d9c7b57fe6ca14164/board/evidence/20261027-rs485-chip-swap-rate.json) · [PDF报告](https://github.com/lizi-learn/ymbot-5io-system-optimization/blob/28562569d887253fdb72693d9c7b57fe6ca14164/docs/pdf/RS485%E6%8D%A2%E8%8A%AF%E7%89%87%E9%80%9F%E7%8E%87%E5%A4%8D%E6%B5%8B-20261027.pdf)

@@ -1,6 +1,6 @@
 # YMBOT USB CAN FD
 
-硬件验证入口：**[YMBOT 硬件验证](https://ymbot-hardware-test.pages.dev/)** · [本板 FD 5M 实测](https://ymbot-hardware-test.pages.dev/usb-canfd/)。自研 USB CAN 板与 5IO 板分开记录，原 [5IO Wiki](https://ymbot-5io-wiki.pages.dev/) 保留。静态站点源码与发布说明见 [site/README.md](site/README.md)。
+硬件验证 Wiki：**[在线阅读](https://ymbot-hardware-test.pages.dev/)** · [本板 FD 5M 实测](https://ymbot-hardware-test.pages.dev/can/usb-canfd-5m)。左侧按主题查阅，每项验证独立成文；自研 USB CAN 板与 5IO 板分开记录，原 [5IO Wiki](https://ymbot-5io-wiki.pages.dev/) 保留。VitePress / Vue 前端、Hono 内容接口与维护说明见 [site/README.md](site/README.md)。
 
 CANable 2.0 固件、备份刷写和物理收发测试工具。适用于采用原版 STM32G431CB / CANable 2.0 引脚方案的 USB CAN 板；与 RK3588 板载 CAN 回移驱动是两个项目。
 
