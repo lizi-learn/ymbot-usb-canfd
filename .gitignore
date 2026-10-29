@@ -8,3 +8,6 @@ backups/
 .env
 site/dist/
 site/.wrangler/
+
+# Wrangler creates its local deployment cache at the repository root.
+.wrangler/
