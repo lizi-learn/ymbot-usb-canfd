@@ -6,3 +6,5 @@ results/
 backups/
 *.private.*
 .env
+site/dist/
+site/.wrangler/

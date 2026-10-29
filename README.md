@@ -1,5 +1,7 @@
 # YMBOT USB CAN FD
 
+硬件验证入口：**[YMBOT 硬件验证](https://ymbot-hardware-test.pages.dev/)** · [本板 FD 5M 实测](https://ymbot-hardware-test.pages.dev/usb-canfd/)。自研 USB CAN 板与 5IO 板分开记录，原 [5IO Wiki](https://ymbot-5io-wiki.pages.dev/) 保留。静态站点源码与发布说明见 [site/README.md](site/README.md)。
+
 CANable 2.0 固件、备份刷写和物理收发测试工具。适用于采用原版 STM32G431CB / CANable 2.0 引脚方案的 USB CAN 板；与 RK3588 板载 CAN 回移驱动是两个项目。
 
 **固件来自 [normaldotcom/canable2-fw](https://github.com/normaldotcom/canable2-fw/tree/b158aa7ab106bc018715cd4d5f02f544f9de1830)，提交 `b158aa7`，没有改写上游固件。** 本项目新增 Linux 工具、验证记录和复现构建流程。保留 GPL 与 ST 等第三方版权说明。
@@ -16,7 +18,7 @@ CANable 2.0 固件、备份刷写和物理收发测试工具。适用于采用�
 | 单向 10 秒窗口 | 约 1,660 帧/秒，有效载荷约 0.85 Mbit/s |
 | CAN2 物理收发 | **未接线，未验证** |
 
-5M 是 FD 数据段的配置位速率，仲裁段为 1M。没有示波器独立测量位宽，也没有把总线跑满；不能把脚本吞吐量当作硬件上限。当前结果不构成长线或数小时/数天稳定性结论。见 [完整报告](docs/CAN0-CAN1-FD5M-20261030.pdf) 和 [原始统计](evidence/)；上表是随包的历史实测快照，不是网页实时遥测。
+5M 是 FD 数据段的配置位速率，仲裁段为 1M。没有示波器独立测量位宽，也没有把总线跑满；不能把脚本吞吐量当作硬件上限。当前结果不构成长线或数小时/数天稳定性结论。见 [完整报告](docs/CAN0-CAN1-FD5M-20261030.pdf) 和 [原始统计](evidence/)；上表是随包的历史实测快照。
 
 ## 接口变化
 

@@ -1,0 +1,66 @@
+{
+  "board_id": "5io-rk3588-lbm5-diban-v01a",
+  "board_name": "5IO 开发板 / LBM5-DIBAN-V01A",
+  "test_date": "2026-10-25",
+  "source_repository": "https://github.com/lizi-learn/ymbot-5io-system-optimization",
+  "source_commit": "28562569d887253fdb72693d9c7b57fe6ca14164",
+  "source_path": "docs/faq/can.md",
+  "evidence_path": "board/evidence/20261025-fd5m-30min.json",
+  "nominal_bps": 1000000,
+  "data_bps": 5000000,
+  "seconds": 1800,
+  "received_frames": 12386944,
+  "strict_acceptance": "failed",
+  "bus_error_delta_each": 6,
+  "rx_fifo_anomaly": true,
+  "stages": [
+    {
+      "name": "基线 · A → B",
+      "seconds": 15,
+      "frames": 30000,
+      "result": "该阶段通过"
+    },
+    {
+      "name": "基线 · B → A",
+      "seconds": 15,
+      "frames": 30000,
+      "result": "该阶段通过"
+    },
+    {
+      "name": "标准 ID · 64 B · A → B",
+      "seconds": 600,
+      "frames": 3998643,
+      "result": "该阶段通过"
+    },
+    {
+      "name": "标准 ID · 64 B · B → A",
+      "seconds": 600,
+      "frames": 3993347,
+      "result": "该阶段通过"
+    },
+    {
+      "name": "扩展 ID · A → B",
+      "seconds": 180,
+      "frames": 936786,
+      "result": "总线错误，失败"
+    },
+    {
+      "name": "扩展 ID · B → A",
+      "seconds": 180,
+      "frames": 912146,
+      "result": "总线错误，失败"
+    },
+    {
+      "name": "混合双向",
+      "seconds": 240,
+      "frames": 2486022,
+      "result": "总线 / RX FIFO 异常，失败"
+    }
+  ],
+  "scope": "Historical snapshot from a different board. Never combine with the USB CAN board's results.",
+  "seconds_including_baseline": 1830,
+  "pressure_received_frames": 12326944,
+  "baseline_received_frames": 60000,
+  "baseline_seconds": 30,
+  "evidence_file_sha256": "d28233e549934bbb05ae37e052bd7c7a3f4b82cf7e6486fccf8d3643eacea666"
+}
