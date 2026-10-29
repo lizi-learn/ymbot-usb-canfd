@@ -33,7 +33,7 @@ const sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'u
 fs.writeFileSync(path.join(generated,'site-info.mjs'),'export default '+JSON.stringify({sourceCommit,framework:'VitePress 1.6.4 + Vue 3 / Hono 4',articleCount:articles.length})+';\n');
 const publicDir=path.join(siteRoot,'public');
 for(const dir of ['data','downloads'])fs.mkdirSync(path.join(publicDir,dir),{recursive:true});
-for(const name of ['continuous-fd5m-20261030.json','published-cli-smoke-20261030.json','channels-20261030.json'])fs.copyFileSync(path.join(root,'evidence',name),path.join(publicDir,'data',name));
+for(const name of ['continuous-fd5m-20261030.json','published-cli-smoke-20261030.json','channels-20261030.json','battery-power-switch-20261030.json'])fs.copyFileSync(path.join(root,'evidence',name),path.join(publicDir,'data',name));
 fs.copyFileSync(path.join(siteRoot,'data/5io-snapshot.json'),path.join(publicDir,'data/5io-snapshot.json'));
 fs.copyFileSync(path.join(root,'docs/CAN0-CAN1-FD5M-20261030.pdf'),path.join(publicDir,'downloads/CAN0-CAN1-FD5M-20261030.pdf'));
 console.log(`Prepared ${articles.length} published articles; USB / 5IO evidence boundaries verified`);

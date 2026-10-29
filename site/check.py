@@ -34,6 +34,9 @@ corpus='\n'.join(p.read_text() for p in OUT.rglob('*') if p.is_file() and p.suff
 for label,pattern in {
  'private IP':r'\b(?:192\.168\.\d+\.\d+|10\.\d+\.\d+\.\d+|172\.(?:1[6-9]|2\d|3[01])\.\d+\.\d+)\b',
  'old credential':r'\b(?:temppwd|ymzz2021)\b',
+ 'BLE MAC':r'\b(?:[0-9a-fA-F]{2}:){5}[0-9a-fA-F]{2}\b',
+ 'private source path':r'/home/pc/|xwechat_files/',
+ 'battery identity':r'\b[0-9]{3}[A-Z]{2}[0-9]{8,}\b',
  'private key':r'-----BEGIN [A-Z ]*PRIVATE KEY-----',
  'token value':r'(?:oauth_token|refresh_token|dns_cloudflare_api_key)\s*[=:]\s*[\"\x27]?[\w-]{16,}'
 }.items():assert not re.search(pattern,corpus),label
@@ -43,6 +46,16 @@ assert all(x in five for x in ['12,386,944','12,326,944','60,000','1,830 ç§’','æ
 # Sidebar titles may mention both boards; article data must retain its own scope.
 assert '12,386,944' not in usb and '143,076' not in five
 assert (OUT/'downloads/CAN0-CAN1-FD5M-20261030.pdf').read_bytes().startswith(b'%PDF-')
+battery=json.loads((OUT/'data/battery-power-switch-20261030.json').read_text())
+assert len(battery['cases'])==2
+assert battery['offline_review_checks']['modbus_readback_crc_and_decoded_values']=={'passed':True,'reply_frames_checked':26}
+a,b=battery['cases']
+assert a['mainboard_boot']['status']=='independently_verified_once'
+assert b['mainboard_boot']['status']=='not_reviewed_in_this_record'
+assert all(c['automatic_power_retries']==c['motor_commands']==c['protection_threshold_changes']==0 for c in [a,b])
+assert b['off']['command_count']==b['on']['command_count']==1 and len(b['off']['readbacks'])==3
+assert b['protection_parameters']['comparison_unchanged'] and not b['protection_parameters']['whole_configuration_block_unchanged']
+assert (OUT/'power/battery-remote-switch.html').is_file()
 assert (OUT/'_worker.js').is_file() and json.loads((OUT/'_routes.json').read_text())['include']==['/api/*']
 # Every framework inline script must be authorized by an exact CSP hash.
 headers=(OUT/'_headers').read_text()

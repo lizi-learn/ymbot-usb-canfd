@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "title": "电池远程开关验证：1003 与 1008 两次实测",
+  "timezone": "Asia/Shanghai",
+  "compiled_on": "2026-10-30",
+  "record_kind": "historical_test_summary_no_device_control",
+  "cases": [
+    {
+      "case_id": "case-a-1003-20261027",
+      "test_label": "1003 台架当次电池",
+      "test_date": "2026-10-27",
+      "battery": {
+        "firmware_family": "HKMS3.1.T",
+        "series_cells": 13,
+        "rated_capacity_ah": 20,
+        "binding": "temporary identity checked during the test, not permanent robot assignment"
+      },
+      "off": {
+        "started_at": "2026-10-27T04:46:11.994423+08:00",
+        "readback_at": "2026-10-27T04:55:11.144738+08:00",
+        "command_count": 1,
+        "control_register": "0x0122",
+        "requested_value": 0,
+        "controls": [
+          1,
+          0
+        ],
+        "mos_reported": [
+          1,
+          0
+        ],
+        "status_0x0073": 512,
+        "transport": "off request from mainboard; subsequent independent BLE readback"
+      },
+      "on": {
+        "write_at": "2026-10-27T04:59:01.849087+08:00",
+        "command_count": 1,
+        "immediate_readback": {
+          "charge_discharge_controls": [
+            1,
+            1
+          ],
+          "charge_discharge_mos_reported": [
+            1,
+            0
+          ],
+          "status_0x006f": 0,
+          "status_0x0073": 0
+        },
+        "delayed_readback_at": "2026-10-27T04:59:39.241496+08:00",
+        "delayed_readback": {
+          "charge_discharge_controls": [
+            1,
+            1
+          ],
+          "charge_discharge_mos_reported": [
+            1,
+            1
+          ],
+          "status_0x006f": 0,
+          "status_0x0073": 0
+        },
+        "additional_power_writes": 0
+      },
+      "mainboard_boot": {
+        "status": "independently_verified_once",
+        "reachable_at": "2026-10-27T05:00:50.451158+08:00",
+        "identity_checked_at": "2026-10-27T05:01:14.335768+08:00",
+        "root_and_boot_mounts_rw": true,
+        "motor_drivers_running": false
+      },
+      "automatic_power_retries": 0,
+      "motor_commands": 0,
+      "protection_threshold_changes": 0,
+      "completed_attended_cycles": 1
+    },
+    {
+      "case_id": "case-b-1008-20261030",
+      "test_label": "1008 台架当次电池",
+      "test_date": "2026-10-30",
+      "battery": {
+        "firmware_family": "HKMS3.3.J",
+        "series_cells": 13,
+        "rated_capacity_ah": 22,
+        "binding": "temporary identity checked during the test, not permanent robot assignment"
+      },
+      "linux_before_off": "already normally shut down; SSH offline is not new evidence of battery output cutoff",
+      "off": {
+        "started_at": "2026-10-30T01:16:15.286964+08:00",
+        "finished_at": "2026-10-30T01:16:33.303654+08:00",
+        "command_count": 1,
+        "control_register": "0x0122",
+        "requested_value": 0,
+        "before": {
+          "charge_discharge_controls": [
+            1,
+            1
+          ],
+          "charge_discharge_mos_reported": [
+            1,
+            1
+          ],
+          "status_0x006f": 1,
+          "status_0x0073": 0
+        },
+        "readbacks": [
+          {
+            "at": "2026-10-30T01:16:16.765878+08:00",
+            "charge_discharge_controls": [
+              1,
+              0
+            ],
+            "charge_discharge_mos_reported": [
+              1,
+              0
+            ],
+            "status_0x006f": 1,
+            "status_0x0073": 512
+          },
+          {
+            "at": "2026-10-30T01:16:22.286547+08:00",
+            "charge_discharge_controls": [
+              1,
+              0
+            ],
+            "charge_discharge_mos_reported": [
+              1,
+              0
+            ],
+            "status_0x006f": 1,
+            "status_0x0073": 512
+          },
+          {
+            "at": "2026-10-30T01:16:33.289798+08:00",
+            "charge_discharge_controls": [
+              1,
+              0
+            ],
+            "charge_discharge_mos_reported": [
+              1,
+              0
+            ],
+            "status_0x006f": 1,
+            "status_0x0073": 512
+          }
+        ],
+        "ble_available_after_off": true
+      },
+      "on": {
+        "write_at": "2026-10-30T01:25:21.749652+08:00",
+        "command_count": 1,
+        "before": {
+          "charge_discharge_controls": [
+            1,
+            0
+          ],
+          "charge_discharge_mos_reported": [
+            1,
+            0
+          ],
+          "status_0x006f": 1,
+          "status_0x0073": 512
+        },
+        "readback_at": "2026-10-30T01:25:23.190230+08:00",
+        "after": {
+          "charge_discharge_controls": [
+            1,
+            1
+          ],
+          "charge_discharge_mos_reported": [
+            1,
+            1
+          ],
+          "status_0x006f": 1,
+          "status_0x0073": 0
+        }
+      },
+      "mainboard_boot": {
+        "status": "not_reviewed_in_this_record",
+        "claim": "MOS restoration only; no automatic mainboard boot claim from the BLE write alone"
+      },
+      "protection_parameters": {
+        "range": "0x0130-0x016F",
+        "comparison_unchanged": true,
+        "observed_dynamic_change": {
+          "register": "0x0110",
+          "before": 50179,
+          "after": 50239
+        },
+        "whole_configuration_block_unchanged": false
+      },
+      "automatic_power_retries": 0,
+      "motor_commands": 0,
+      "protection_threshold_changes": 0,
+      "fault_reset_commands": 0,
+      "completed_off_on_sequences": 1
+    }
+  ],
+  "protocol_reference": {
+    "repository": "https://github.com/patagonaa/esphome-daly-hkms-bms",
+    "commit": "732d8129974fbb4210fec3ff0bdb9bf146859bf6",
+    "register_definitions_sha256": "b6885bc51d431ecf98b21edb4ff6cc6ac9e92f9d485638e06bfd59e7245fd51a",
+    "qualification": "third-party versioned implementation reference, not a manufacturer guarantee for all batteries"
+  },
+  "evidence_fingerprints": [
+    {
+      "artifact_id": "a-summary",
+      "sha256": "5bffdf22fb6f80aca40eb7241c427e6b2408c6c9d3d5f735c3c84b6371b2c792"
+    },
+    {
+      "artifact_id": "a-off",
+      "sha256": "86a900debb12c887c2d671140deeab5fb335db71b2a2737e7795bc599a3499ce"
+    },
+    {
+      "artifact_id": "a-closed-readback",
+      "sha256": "b4eb778cdb0d413345e7de34d930a70ba7ce32c21b9841fa4a69794486536146"
+    },
+    {
+      "artifact_id": "a-on",
+      "sha256": "286ae3f11fee0b7c4c82a811654deb8a04575d6e0ec9ea561821b827fbd35912"
+    },
+    {
+      "artifact_id": "a-boot",
+      "sha256": "c9396bd40f648cf16066544c737a6cc4da8a39c433bc6fde5ced6bc57d6f9502"
+    },
+    {
+      "artifact_id": "b-summary",
+      "sha256": "9734d00b76c83e367ed70fbe23fb1b307723b07e61214171ccc9908ceaeda1e9"
+    },
+    {
+      "artifact_id": "b-off",
+      "sha256": "0ec099493f9f64c5e5b5efc79424ee75a822eb341814cae3eec1dc353b907e6c"
+    },
+    {
+      "artifact_id": "b-on",
+      "sha256": "182aaeff814edec7c674dba5af51fa1aa72a8b7ddff87037d9209e882fd6406c"
+    }
+  ],
+  "not_measured": [
+    "External terminal voltage or switched rail voltage/current",
+    "Inrush, thermal or electrical safety",
+    "Repeated cycling, long standby and practical BLE range",
+    "Reliable internet wake through an independently powered gateway",
+    "Other battery identities and firmware revisions"
+  ],
+  "public_data_policy": {
+    "raw_evidence_files_published": false,
+    "hardware_identity_strings_published": false,
+    "raw_hex_frames_published": false,
+    "credentials_or_private_paths_published": false
+  },
+  "offline_review_checks": {
+    "modbus_readback_crc_and_decoded_values": {
+      "passed": true,
+      "reply_frames_checked": 26
+    },
+    "upstream_source_file_hashes_verified": 5
+  }
+}
